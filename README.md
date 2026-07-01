@@ -7,13 +7,25 @@ Este projeto simula o desenvolvimento de um sistema de gerenciamento de tarefas 
 A aplicação base consiste na implementação de um sistema básico, contendo uma funcionalidade essencial de CRUD (Create, Read, Update, Delete) para o gerenciamento de tarefas.
 
 ## ⚙️ Metodologia Adotada
-O projeto adota práticas de desenvolvimento ágil, utilizando a aba Projects do GitHub para a criação e gestão de um quadro Kanban[cite: 1]. As tarefas estão estruturadas nas seguintes colunas:
+O projeto adota práticas de desenvolvimento ágil, utilizando a aba Projects do GitHub para a criação e gestão de um quadro Kanban. As tarefas estão estruturadas nas seguintes colunas:
 * A Fazer
 * Em Progresso
 * Concluído
 
-## 🚀 Como Executar o Projeto
-*(As instruções de instalação e execução do código e dos testes automatizados serão adicionadas aqui após o desenvolvimento da base do sistema).*
+## 🚀 Funcionalidades (CRUD)
+* **Create:** Adição de novas tarefas ao sistema.
+* **Read:** Listagem de todas as tarefas cadastradas.
+* **Update:** Atualização do status de uma tarefa existente.
+* **Delete:** Remoção de tarefas do sistema.
 
-## 🔄 Gestão de Mudanças
-*(Espaço reservado para documentar a simulação de alteração no escopo do projeto e a adaptação do Kanban, conforme o avanço do desenvolvimento).
+## 🛠️ Tecnologias Utilizadas
+* **Linguagem:** Python 3
+* **Testes Automatizados:** Pytest
+* **Controle de Versão:** Git e GitHub
+
+## ⚙️ Como executar o projeto
+1. Clone o repositório no seu computador.
+2. Abra o terminal e navegue até a pasta do projeto.
+3. Para rodar o sistema, execute o comando:
+   ```bash
+   python src/tarefas.py
