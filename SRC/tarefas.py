@@ -34,3 +34,28 @@ def listar_tarefas():
 adicionar_tarefa(1, "Configurar repositório", "Criar pastas src e testes")
 adicionar_tarefa(2, "Revisar uniformes", "Checar a nova política de vestimenta da equipe")
 listar_tarefas()
+
+
+# Função para ATUALIZAR (Update) o status de uma tarefa
+def atualizar_tarefa(id_tarefa, novo_status):
+    for tarefa in banco_de_tarefas:
+        if tarefa.id_tarefa == id_tarefa:
+            tarefa.status = novo_status
+            print(f"Sucesso: O status da tarefa {id_tarefa} foi atualizado para '{novo_status}'.")
+            return
+    print(f"Erro: Tarefa com ID {id_tarefa} não encontrada.")
+
+# Função para DELETAR (Delete) uma tarefa
+def deletar_tarefa(id_tarefa):
+    for tarefa in banco_de_tarefas:
+        if tarefa.id_tarefa == id_tarefa:
+            banco_de_tarefas.remove(tarefa)
+            print(f"Sucesso: A tarefa {id_tarefa} foi deletada do sistema.")
+            return
+    print(f"Erro: Tarefa com ID {id_tarefa} não encontrada.")
+
+# --- Testando as novas funções ---
+print("\n--- Atualizando e Deletando ---")
+atualizar_tarefa(1, "Em Progresso")
+deletar_tarefa(2)
+listar_tarefas()
